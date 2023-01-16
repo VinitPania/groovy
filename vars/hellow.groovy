@@ -1,4 +1,4 @@
-def call(name){
+def name(name){
     println "mellow  ${name}, how are you doing today nigga"
 }
 
@@ -7,9 +7,6 @@ def Api(){
                         "name":"morpheus"
                         "job":"leader"
                     }"""
-    
- 
-
 }
 
 

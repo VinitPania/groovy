@@ -8,6 +8,8 @@ def callApi(){
                         "job":"leader"
                     }"""
     
-   println(data_Body)
+ 
+ 
 }
+println(callApi())
 

@@ -1,18 +1,18 @@
-//conditionals statmensts
-//if conditionals statment
+//conditionals statements
+//if conditionals statements
 def  num = 112 
 if(num == 112){
     println("the value is 112")
 }
 
-//if-else statment
+//if-else statement
 if(num == 112){
     println("the value is true")
 }
 else{
     println("the value is false")
 }
-//if-elif-else statment
+//if-elif-else statements
 
 if(num > 0){
     println("+ve")

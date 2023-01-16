@@ -8,7 +8,6 @@ def callApi(){
                         "job":"leader"
                     }"""
     
-    
+   println(callApi()) 
 }
 
-println(callApi())

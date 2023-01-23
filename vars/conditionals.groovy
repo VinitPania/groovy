@@ -33,7 +33,7 @@ switch (value){
         result = "1 value"
         break;
     }
-    case 2:{
+    case 89:{
         result = "2 value"
         break;
     }

@@ -21,16 +21,22 @@ for (a in 1..5) {
     println('for in ' + a)
 }
 
-//upto loop
+//* Iterate over a map
+def map = ["Name" : "Groovy" , "Subject" : "Automation"]
+for (e in map){
+    println e.key;
+}
+
+//*upto loop
 //in this the value is starting from 1 and goes upto 5 ; the "$it" is an internal iterative value that 
 //is use to iterate the value so that it can able to print
 1.upto(5) { println'upto' + '  ' + "$it" }
 
-//times loops
+//*times loops
 // In this the end value is given and the code use its starting default value ie 1 and count till 5
 5.times { println'times' + '  ' + "$it" }
 
-//step loop where 1. is the starting value and (11 -> is the ending value , 1 -> is the increment value)
+//*step loop where 1. is the starting value and (11 -> is the ending value , 1 -> is the increment value)
 1.step(6, 1) { println'step' + ' ' + "$it" }
 
 //we can use loops to iterate over maps , list and many more items that are in groovy.

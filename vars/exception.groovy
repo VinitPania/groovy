@@ -6,8 +6,8 @@
 try {
     int i = 1 / 0
 }
-catch (ArithmeticException e) {
-    println('ArithmeticException caught: ' + e)
+catch (ArithmeticException exp) {
+    println('ArithmeticException caught: ' + exp)
 }
 catch (Exception exp) {
     println('Exception is handeled by try catch block')

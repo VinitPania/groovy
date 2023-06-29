@@ -42,7 +42,7 @@ class script1 {
 
         //difference between single and double quotes
         println "4 The name of the name is ${name}"
-        //* The single Quotes in below line does not resolve the variable name
+        //* The single Quotes in below line does not resolve the variable name and it gonna print as it is.
         println '5 the name is ${name}'
 
         //**    Operators
@@ -63,11 +63,11 @@ class script1 {
         //the logical operator are !->logical-not &&->logical and ||->logical or
         // the precedence is as  follows !>&&>||
         // logical or and logical and has the feature of Short Circuit it means if the first condition in AND OR is true then it wont check the next condition.
-        //*tenerary operators
+        //*ternary operators
         def we = (ussop > 1) ? 'greater than 1' : 'not greater than 1' //string we save the result of the condition ie greater than 1  or not greater than 1
         print(we)
 
-    //   "?:"->is known as elvis operator it is use to check the condition similar to if else
+    //   "?:"->is known as elvis operator it is use to check the condition similar to if else but it is much shorter than ternary operator
     }
 
 }

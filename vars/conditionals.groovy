@@ -26,7 +26,7 @@ else {
 
 //switch case
 
-String  result = ''
+String result = ''
 value = 89
 switch (value) {
     case 1: {

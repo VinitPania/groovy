@@ -22,42 +22,56 @@ println '+++++++++++++++++++++++++++++++'
 def line = '''We are studying Groovy Coding
 and we are using it in jenkins pipeline  '''
 println line
-println  "+++++++++++++++++++++++++++++++++++"
+println  '+++++++++++++++++++++++++++++++++++'
 //* Similarly we can use this using Triple Double-Quotes
-line = """Again we are studying the groovy
-and we will use it in jenkins pipeline"""
+line = '''Again we are studying the groovy
+and we will use it in jenkins pipeline'''
 
-println line 
-println "++++++++++++++++++++++++++++"
+println line
+println '++++++++++++++++++++++++++++'
 
-println "Using the  string manuplation "
-println name.length();  // Length of string
-println name[1]         //  finding location of char using positive int 
+println 'Using the  string manuplation '
+println name.length()  // Length of string
+println name[1]         //  finding location of char using positive int
 println name[-3]        //  finding location of char using negative int
-println name.indexOf('t') // finding the position of string using char 
-println "++++++++++++++++++++"
+println name.indexOf('t') // finding the position of string using char
+println '++++++++++++++++++++'
 println name[1..3]   //Getting the value from the string position
-println name[4..1]   //getting the character from reversed value 
-println name[2,4,1,0,3] //Picking up the character using single position
-println name[2,1,2] 
+println name[4..1]   //getting the character from reversed value
+println name[2, 4, 1, 0, 3] //Picking up the character using single position
+println name[2, 1, 2]
 
 println name.substring(3) //Using the substring function
-println name.subSequence(1,3) //Using the subSequence function 
+println name.subSequence(1, 3) //Using the subSequence function
 
-//? String manuplation 
-def str = "This is a groovy function "
-println str.split(" ") //this will split the word and give me the each word inside of a list 
-println str-("groovy ") // This will remove the groovy word from str and print the rest of the sentence
-println str+("state")  //This will add the "state" at the end of the "str"
-println str.replace("function" , "class") //This will replace the "function" with "class"
+//? String manuplation
+def str = 'This is a groovy function '
+println str.split(' ') //this will split the word and give me the each word inside of a list
+println str - ("groovy ") // This will remove the groovy word from str and print the rest of the sentence
+println str + ("state")  //This will add the "state" at the end of the "str"
+println str.replace('function' , 'class') //This will replace the "function" with "class"
 
 println str.toLowerCase() //Converts the "str" to lower case
 println str.toUpperCase() //Converts the "str"  to uppercase
 
 println str.toList()       //Breaks each words and save it to a list
 
+println 'Groovy ' * 3    //Prints groovy 3 times
 
-println "Groovy " * 3    //Prints groovy 3 times
+println  'ABc'.equals('Abc') //Compare the strings and gives the output as true or false
+println 'abc'.equals('abc')
+println 'Abc'.equalsIgnoreCase('abc') // Ignore  the  case wether it is uppercase or not
 
-println  "ABc".equals("Abc")
-println "Abc".equalsIgnoreCase("abc")
+// * Slashy and $/ Strings
+
+def s1 = /My name is oingo/
+println('My Slashy string is =' + s1)
+def s2 = $/ My name
+            is boingo /$
+println('My Dollar slashy string is =  ' + s2)
+def s3 = "we are oingo boingo \"combi\" "  // If we use quotes and then to print quotes we need to mask it with back slash
+// But if we use slashy or dollar slashy then we dont need to mask the quotes and it is also usefull in RE
+println s3
+def s4 = /My name is
+"Holhorse" $s1 $s2 $s3/
+println s4

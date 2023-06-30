@@ -1,3 +1,5 @@
+package vars
+
 def name(name) {
     println "mellow  ${name}, how are you doing today nigga"
 }

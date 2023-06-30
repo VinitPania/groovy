@@ -75,3 +75,5 @@ println s3
 def s4 = /My name is
 "Holhorse" $s1 $s2 $s3/
 println s4
+//TODO  Multiline is available in '''..''', """...""", /../, $/../$
+//TODO  Interpolation is available in "..", """..""", /../, $/../$

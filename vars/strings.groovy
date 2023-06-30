@@ -44,16 +44,17 @@ println name[2,1,2]
 println name.substring(3) //Using the substring function
 println name.subSequence(1,3) //Using the subSequence function 
 
+//? String manuplation 
 def str = "This is a groovy function "
-println str.split(" ")
-println str-("groovy ")
-println str+("state")
-println str.replace("function" , "class")
+println str.split(" ") //this will split the word and give me the each word inside of a list 
+println str-("groovy ") // This will remove the groovy word from str and print the rest of the sentence
+println str+("state")  //This will add the "state" at the end of the "str"
+println str.replace("function" , "class") //This will replace the "function" with "class"
 
-println str.toLowerCase()
-println str.toUpperCase()
+println str.toLowerCase() //Converts the "str" to lower case
+println str.toUpperCase() //Converts the "str"  to uppercase
 
-println str.toList()
+println str.toList()       //Breaks each words and save it to a list
 
 
-println "Groovy " * 3
+println "Groovy " * 3    //Prints groovy 3 times

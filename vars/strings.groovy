@@ -58,3 +58,6 @@ println str.toList()       //Breaks each words and save it to a list
 
 
 println "Groovy " * 3    //Prints groovy 3 times
+
+println  "ABc".equals("Abc")
+println "Abc".equalsIgnoreCase("abc")

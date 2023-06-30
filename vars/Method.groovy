@@ -2,18 +2,6 @@
 // It is a block  of code makes the code modular and reusable also it can take parameter and gibe return type
 package vars
 
-class Method {
-
-    static void main(args) {
-        Method myFunc = new Method()
-        myFunc.functions()
-    }
-    def functions() {
-        println 'Inside the class Method '
-    }
-
-}
-
 def myMeth () {
     println 'Hello world'
 }
